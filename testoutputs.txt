@@ -1,0 +1,823 @@
+Initial State of hashQ
+Empty
+
+Empty
+
+Empty
+
+Empty
+
+
+Initial State of freeList
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 ->
+
+---------------------------------------------------------
+Process  6270  has requested block number  23 
+---------------------------------------------------------
+
+
+---------------------------------------------------------
+Process  6271  has requested block number  0 
+---------------------------------------------------------
+
+
+---------------------------------------------------------
+Process  6272  has requested block number  26 
+---------------------------------------------------------
+
+Replace buffer  -1  in freeList, with buffer  23
+Buffer  -1  is removed from free list
+Buffer  23  added to the hash queue
+
+Process  6270 : RECIEVED BUFFER  23
+
+ 6270  HashQ : 
+Empty
+
+Empty
+
+Empty
+
+<- 23 ->
+
+
+ 6270  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 ->
+Replace buffer  -1  in freeList, with buffer  0
+Buffer  -1  is removed from free list
+Buffer  0  added to the hash queue
+
+Process  6271 : RECIEVED BUFFER  0
+
+ 6271  HashQ : 
+<- 0 ->
+
+Empty
+
+Empty
+
+<- 23 ->
+
+
+ 6271  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 ->
+Replace buffer  -1  in freeList, with buffer  26
+Buffer  -1  is removed from free list
+Buffer  26  added to the hash queue
+
+Process  6272 : RECIEVED BUFFER  26
+
+ 6272  HashQ : 
+<- 0 ->
+
+Empty
+
+<- 26 ->
+
+<- 23 ->
+
+
+ 6272  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 ->
+Operation 1 - Process  6271  Buffer:  0
+Operation 0 - Process  6270  Delayed Write:  23
+Process  6271  has unlocked buffer  0             Lock status: False
+FreeList - Process  6271
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 ->
+Process  6270  has unlocked buffer  23             Lock status: False
+FreeList - Process  6270
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 ->
+Operation 2 - Process  6272  Buffer:  26
+Process  6272  has unlocked buffer  26             Lock status: False
+FreeList - Process  6272
+<- 26 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 ->
+
+---------------------------------------------------------
+Process  6271  has requested block number  10 
+---------------------------------------------------------
+
+
+---------------------------------------------------------
+Process  6270  has requested block number  17 
+---------------------------------------------------------
+
+Replace buffer  26  in freeList, with buffer  10
+Buffer  26  is removed from free list
+Buffer  10  added to the hash queue
+
+---------------------------------------------------------
+Process  6272  has requested block number  27 
+---------------------------------------------------------
+
+
+Process  6271 : RECIEVED BUFFER  10
+
+ 6271  HashQ : 
+<- 0 ->
+
+Empty
+
+<- 10 ->
+
+<- 23 ->
+
+
+ 6271  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 ->
+Replace buffer  -1  in freeList, with buffer  17
+Buffer  -1  is removed from free list
+Buffer  17  added to the hash queue
+
+Process  6270 : RECIEVED BUFFER  17
+
+ 6270  HashQ : 
+<- 0 ->
+
+<- 17 ->
+
+<- 10 ->
+
+<- 23 ->
+
+
+ 6270  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 ->
+Replace buffer  -1  in freeList, with buffer  27
+Buffer  -1  is removed from free list
+Buffer  27  added to the hash queue
+
+Process  6272 : RECIEVED BUFFER  27
+
+ 6272  HashQ : 
+<- 0 ->
+
+<- 17 ->
+
+<- 10 ->
+
+<- 23 -><- 27 ->
+
+
+ 6272  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 ->
+Process  6271  is going into long sleep with buffer  10
+Operation 2 - Process  6270  Buffer:  17
+Process  6270  has unlocked buffer  17             Lock status: False
+FreeList - Process  6270
+<- 17 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 ->
+Process  6272  is going into long sleep with buffer  27
+
+---------------------------------------------------------
+Process  6270  has requested block number  10 
+---------------------------------------------------------
+
+Process  6270  is going to sleep as buffer  10  is present in hashQ and is busy
+Process  6271  woke up from long sleep with buffer  10
+Process  6271  has unlocked buffer  10             Lock status: False
+FreeList - Process  6271
+<- 17 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 10 ->
+process:  6270  woke up as it was sleeping for a particular buffer
+Process  6272  woke up from long sleep with buffer  27
+Process  6270  will get buffer  10  from hashQ
+
+Process  6270 : RECIEVED BUFFER  10
+
+ 6270  HashQ : 
+<- 0 ->
+
+<- 17 ->
+
+<- 10 ->
+
+<- 23 -><- 27 ->
+
+
+Process  6272  has unlocked buffer  27             Lock status: False
+FreeList - Process  6272
+ 6270  FreeList :
+<- 17 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 ->
+<- 17 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 ->
+
+---------------------------------------------------------
+Process  6271  has requested block number  3 
+---------------------------------------------------------
+
+Replace buffer  17  in freeList, with buffer  3
+Buffer  17  is removed from free list
+Buffer  3  added to the hash queue
+
+Process  6271 : RECIEVED BUFFER  3
+
+ 6271  HashQ : 
+<- 0 ->
+
+Empty
+
+<- 10 ->
+
+<- 23 -><- 27 -><- 3 ->
+
+
+ 6271  FreeList :
+
+---------------------------------------------------------
+Process  6272  has requested block number  11 
+---------------------------------------------------------
+
+Operation 0 - Process  6270  Delayed Write:  10
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 ->
+Replace buffer  -1  in freeList, with buffer  11
+Buffer  -1  is removed from free list
+Buffer  11  added to the hash queue
+
+Process  6272 : RECIEVED BUFFER  11
+
+ 6272  HashQ : 
+<- 0 ->
+
+Empty
+
+<- 10 ->
+
+<- 23 -><- 27 -><- 3 -><- 11 ->
+
+
+ 6272  FreeList :
+Process  6270  has unlocked buffer  10             Lock status: False
+FreeList - Process  6270
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 ->
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 ->
+Process  6271  is going into long sleep with buffer  3
+
+---------------------------------------------------------
+Process Operation 1 - Process  6272  Buffer:  11
+ 6270  has requested block number  3 
+---------------------------------------------------------
+
+Process  6270  is going to sleep as buffer  3  is present in hashQ and is busy
+Process  6272  has unlocked buffer  11             Lock status: False
+FreeList - Process  6272
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 ->
+
+---------------------------------------------------------
+Process  6272  has requested block number  1 
+---------------------------------------------------------
+
+Replace buffer  -1  in freeList, with buffer  1
+Buffer  -1  is removed from free list
+Buffer  1  added to the hash queue
+
+Process  6272 : RECIEVED BUFFER  1
+
+ 6272  HashQ : 
+<- 0 ->
+
+<- 1 ->
+
+<- 10 ->
+
+<- 23 -><- 27 -><- 3 -><- 11 ->
+
+
+ 6272  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 ->
+Process  6272  is going into long sleep with buffer  1
+Process  6271  woke up from long sleep with buffer  3
+Process  6271  has unlocked buffer  3             Lock status: False
+FreeList - Process  6271
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 3 ->
+process:  6270  woke up as it was sleeping for a particular buffer
+Process  6270  will get buffer  3  from hashQ
+
+Process  6270 : RECIEVED BUFFER  3
+
+ 6270  HashQ : 
+<- 0 ->
+
+<- 1 ->
+
+<- 10 ->
+
+<- 23 -><- 27 -><- 3 -><- 11 ->
+
+
+ 6270  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 ->
+
+---------------------------------------------------------
+Process  6271  has requested block number  14 
+---------------------------------------------------------
+
+Replace buffer  -1  in freeList, with buffer  14
+Buffer  -1  is removed from free list
+Buffer  14  added to the hash queue
+Operation 2 - Process  6270  Buffer:  3
+
+Process  6271 : RECIEVED BUFFER  14
+
+ 6271  HashQ : 
+<- 0 ->
+
+<- 1 ->
+
+<- 10 -><- 14 ->
+
+<- 23 -><- 27 -><- 3 -><- 11 ->
+
+
+ 6271  FreeList :
+<- 3 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 ->
+Process  6270  has unlocked buffer  3             Lock status: False
+FreeList - Process  6270
+<- 3 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 ->
+Process  6272  woke up from long sleep with buffer  1
+Operation 0 - Process  6271  Delayed Write:  14
+
+---------------------------------------------------------
+Process  6270  has requested block number  2 
+---------------------------------------------------------
+
+Process  6272  has unlocked buffer  1             Lock status: False
+FreeList - Process  6272
+<- 3 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 1 ->
+Replace buffer  3  in freeList, with buffer  2
+Buffer  3  is removed from free list
+Buffer  2  added to the hash queue
+
+Process  6270 : RECIEVED BUFFER  2
+
+ 6270  HashQ : 
+<- 0 ->
+
+<- 1 ->
+
+<- 10 -><- 14 -><- 2 ->
+
+<- 23 -><- 27 -><- 11 ->
+
+
+ 6270  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 1 -><- 14 ->
+Process  6271  has unlocked buffer  14             Lock status: False
+FreeList - Process  6271
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 1 -><- 14 ->
+
+---------------------------------------------------------
+Process  6272  has requested block number  1 
+---------------------------------------------------------
+
+Process  6272  will get buffer  1  from hashQ
+
+Process  6272 : RECIEVED BUFFER  1
+
+ 6272  HashQ : 
+<- 0 ->
+
+<- 1 ->
+
+<- 10 -><- 14 -><- 2 ->
+
+<- 23 -><- 27 -><- 11 ->
+
+
+ 6272  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 ->
+
+---------------------------------------------------------
+Process Operation 0 - Process  6270  Delayed Write:  2
+ 6271  has requested block number  18 
+---------------------------------------------------------
+
+Replace buffer  -1  in freeList, with buffer  18
+Buffer  -1  is removed from free list
+Buffer  18  added to the hash queue
+
+Process  6271 : RECIEVED BUFFER  18
+
+ 6271  HashQ : 
+<- 0 ->
+
+<- 1 ->
+
+<- 10 -><- 14 -><- 2 -><- 18 ->
+
+<- 23 -><- 27 -><- 11 ->
+
+
+ 6271  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 2 ->
+Process  6270  has unlocked buffer  2             Lock status: False
+FreeList - Process  6270
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 2 ->
+Process  6272  is going into long sleep with buffer  1
+Operation 0 - Process  6271  Delayed Write:  18
+
+---------------------------------------------------------
+Process  6270  has requested block number  2 
+---------------------------------------------------------
+
+Process  6271  has unlocked buffer  18             Lock status: False
+FreeList - Process  6271
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 2 -><- 18 ->
+Process  6270  will get buffer  2  from hashQ
+
+Process  6270 : RECIEVED BUFFER  2
+
+ 6270  HashQ : 
+<- 0 ->
+
+<- 1 ->
+
+<- 10 -><- 14 -><- 2 -><- 18 ->
+
+<- 23 -><- 27 -><- 11 ->
+
+
+ 6270  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 18 ->
+
+---------------------------------------------------------
+Process  6271  has requested block number  15 
+---------------------------------------------------------
+
+Replace buffer  -1  in freeList, with buffer  15
+Buffer  -1  is removed from free list
+Buffer  15  added to the hash queue
+Operation 1 - Process  6270  Buffer:  2
+
+Process  6271 : RECIEVED BUFFER  15
+
+ 6271  HashQ : 
+<- 0 ->
+
+<- 1 ->
+
+<- 10 -><- 14 -><- 2 -><- 18 ->
+
+<- 23 -><- 27 -><- 11 -><- 15 ->
+
+
+ 6271  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 18 -><- 2 ->
+Process  6270  has unlocked buffer  2             Lock status: False
+FreeList - Process  6270
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 18 -><- 2 ->
+Process  6271  is going into long sleep with buffer  15
+
+---------------------------------------------------------
+Process  6270  has requested block number  19 
+---------------------------------------------------------
+
+Replace buffer  -1  in freeList, with buffer  19
+Buffer  -1  is removed from free list
+Buffer  19  added to the hash queue
+
+Process  6270 : RECIEVED BUFFER  19
+
+ 6270  HashQ : 
+<- 0 ->
+
+<- 1 ->
+
+<- 10 -><- 14 -><- 2 -><- 18 ->
+
+<- 23 -><- 27 -><- 11 -><- 15 -><- 19 ->
+
+
+ 6270  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 18 -><- 2 ->
+Operation 2 - Process  6270  Buffer:  19
+Process  6270  has unlocked buffer  19             Lock status: False
+FreeList - Process  6270
+<- 19 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 18 -><- 2 ->
+
+---------------------------------------------------------
+Process  6270  has requested block number  17 
+---------------------------------------------------------
+
+Replace buffer  19  in freeList, with buffer  17
+Buffer  19  is removed from free list
+Buffer  17  added to the hash queue
+
+Process  6270 : RECIEVED BUFFER  17
+
+ 6270  HashQ : 
+<- 0 ->
+
+<- 1 -><- 17 ->
+
+<- 10 -><- 14 -><- 2 -><- 18 ->
+
+<- 23 -><- 27 -><- 11 -><- 15 ->
+
+
+ 6270  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 18 -><- 2 ->
+Operation 2 - Process  6270  Buffer:  17
+Process  6270  has unlocked buffer  17             Lock status: False
+FreeList - Process  6270
+<- 17 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 18 -><- 2 ->
+
+---------------------------------------------------------
+Process  6270  has requested block number  1 
+---------------------------------------------------------
+
+Process  6270  is going to sleep as buffer  1  is present in hashQ and is busy
+Process  6272  woke up from long sleep with buffer  1
+Process  6272  has unlocked buffer  1             Lock status: False
+FreeList - Process  6272
+<- 17 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 18 -><- 2 -><- 1 ->
+process:  6270  woke up as it was sleeping for a particular buffer
+Process  6270  will get buffer  1  from hashQ
+
+Process  6270 : RECIEVED BUFFER  1
+
+ 6270  HashQ : 
+<- 0 ->
+
+<- 1 -><- 17 ->
+
+<- 10 -><- 14 -><- 2 -><- 18 ->
+
+<- 23 -><- 27 -><- 11 -><- 15 ->
+
+
+ 6270  FreeList :
+<- 17 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 18 -><- 2 ->
+
+---------------------------------------------------------
+Process  6272  has requested block number  17 
+---------------------------------------------------------
+
+Process  6272  will get buffer  17  from hashQ
+Operation 2 - Process  6270  Buffer:  1
+
+Process  6272 : RECIEVED BUFFER  17
+
+ 6272  HashQ : 
+<- 0 ->
+
+<- 1 -><- 17 ->
+
+<- 10 -><- 14 -><- 2 -><- 18 ->
+
+<- 23 -><- 27 -><- 11 -><- 15 ->
+
+
+ 6272  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 18 -><- 2 ->
+Process  6270  has unlocked buffer  1             Lock status: False
+FreeList - Process  6270
+<- 1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 18 -><- 2 ->
+Process  6271  woke up from long sleep with buffer  15
+Operation 1 - Process  6272  Buffer:  17
+
+---------------------------------------------------------
+Process  6270  has requested block number  24 
+---------------------------------------------------------
+
+Process  6271  has unlocked buffer  15             Lock status: False
+FreeList - Process  6271
+<- 1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 18 -><- 2 -><- 15 ->
+Replace buffer  1  in freeList, with buffer  24
+Buffer  1  is removed from free list
+Buffer  24  added to the hash queue
+
+Process  6270 : RECIEVED BUFFER  24
+
+ 6270  HashQ : 
+<- 0 -><- 24 ->
+
+<- 17 ->
+
+<- 10 -><- 14 -><- 2 -><- 18 ->
+
+<- 23 -><- 27 -><- 11 -><- 15 ->
+
+
+ 6270  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 18 -><- 2 -><- 15 -><- 17 ->
+Process  6272  has unlocked buffer  17             Lock status: False
+FreeList - Process  6272
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 18 -><- 2 -><- 15 -><- 17 ->
+
+---------------------------------------------------------
+Process  6271  has requested block number  16 
+---------------------------------------------------------
+
+
+---------------------------------------------------------
+Process  6272  has requested block number  7 
+---------------------------------------------------------
+
+Process  6270  is going into long sleep with buffer  24
+Replace buffer  -1  in freeList, with buffer  16
+Buffer  -1  is removed from free list
+Buffer  16  added to the hash queue
+
+Process  6271 : RECIEVED BUFFER  16
+
+ 6271  HashQ : 
+<- 0 -><- 24 -><- 16 ->
+
+<- 17 ->
+
+<- 10 -><- 14 -><- 2 -><- 18 ->
+
+<- 23 -><- 27 -><- 11 -><- 15 ->
+
+
+ 6271  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 18 -><- 2 -><- 15 -><- 17 ->
+Replace buffer  -1  in freeList, with buffer  7
+Buffer  -1  is removed from free list
+Buffer  7  added to the hash queue
+
+Process  6272 : RECIEVED BUFFER  7
+
+ 6272  HashQ : 
+<- 0 -><- 24 -><- 16 ->
+
+<- 17 ->
+
+<- 10 -><- 14 -><- 2 -><- 18 ->
+
+<- 23 -><- 27 -><- 11 -><- 15 -><- 7 ->
+
+
+ 6272  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 18 -><- 2 -><- 15 -><- 17 ->
+Operation 0 - Process  6271  Delayed Write:  16
+Operation 0 - Process  6272  Delayed Write:  7
+Process  6271  has unlocked buffer  16             Lock status: False
+FreeList - Process  6271
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 18 -><- 2 -><- 15 -><- 17 -><- 16 ->
+Process  6272  has unlocked buffer  7             Lock status: False
+FreeList - Process  6272
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 18 -><- 2 -><- 15 -><- 17 -><- 16 -><- 7 ->
+
+---------------------------------------------------------
+Process  6271  has requested block number  18 
+---------------------------------------------------------
+
+
+---------------------------------------------------------
+Process  6272  has requested block number  17 
+---------------------------------------------------------
+
+Process  6271  will get buffer  18  from hashQ
+
+Process  6271 : RECIEVED BUFFER  18
+
+ 6271  HashQ : 
+<- 0 -><- 24 -><- 16 ->
+
+<- 17 ->
+
+<- 10 -><- 14 -><- 2 -><- 18 ->
+
+<- 23 -><- 27 -><- 11 -><- 15 -><- 7 ->
+
+
+ 6271  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 2 -><- 15 -><- 17 -><- 16 -><- 7 ->
+Process  6272  will get buffer  17  from hashQ
+
+Process  6272 : RECIEVED BUFFER  17
+
+ 6272  HashQ : 
+<- 0 -><- 24 -><- 16 ->
+
+<- 17 ->
+
+<- 10 -><- 14 -><- 2 -><- 18 ->
+
+<- 23 -><- 27 -><- 11 -><- 15 -><- 7 ->
+
+
+ 6272  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 2 -><- 15 -><- 16 -><- 7 ->
+Operation 2 - Process  6271  Buffer:  18
+Process  6271  has unlocked buffer  18             Lock status: False
+FreeList - Process  6271
+Operation 1 - Process  6272  Buffer:  17
+<- 18 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 2 -><- 15 -><- 16 -><- 7 ->
+Process  6272  has unlocked buffer  17             Lock status: False
+FreeList - Process  6272
+<- 18 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 2 -><- 15 -><- 16 -><- 7 -><- 17 ->
+
+---------------------------------------------------------
+Process  6271  has requested block number  9 
+---------------------------------------------------------
+
+
+---------------------------------------------------------
+Process  6272  has requested block number  23 
+---------------------------------------------------------
+
+freelist after removing  18
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 23 -><- 27 -><- 10 -><- 11 -><- 14 -><- 2 -><- 15 -><- 16 -><- 7 -><- 17 ->
+Process  6271  came across free buffer  18  but marked as delayed write so is executing asynchronous write
+Process  6272  will get buffer  23  from hashQ
+
+Process  6272 : RECIEVED BUFFER  23
+
+ 6272  HashQ : 
+<- 0 -><- 24 -><- 16 ->
+
+<- 17 ->
+
+<- 10 -><- 14 -><- 2 -><- 18 ->
+
+<- 23 -><- 27 -><- 11 -><- 15 -><- 7 ->
+
+
+ 6272  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 27 -><- 10 -><- 11 -><- 14 -><- 2 -><- 15 -><- 16 -><- 7 -><- 17 ->
+Replace buffer  -1  in freeList, with buffer  9
+Buffer  -1  is removed from free list
+Buffer  9  added to the hash queue
+
+Process  6271 : RECIEVED BUFFER  9
+
+ 6271  HashQ : 
+<- 0 -><- 24 -><- 16 ->
+
+<- 17 -><- 9 ->
+
+<- 10 -><- 14 -><- 2 -><- 18 ->
+
+<- 23 -><- 27 -><- 11 -><- 15 -><- 7 ->
+
+
+ 6271  FreeList :
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 27 -><- 10 -><- 11 -><- 14 -><- 2 -><- 15 -><- 16 -><- 7 -><- 17 ->
+************ Asynchronous Writing of Block number- 18  ***************
+Operation 1 - Process  6272  Buffer:  23
+Process  6271  is going into long sleep with buffer  9
+Process  6272  has unlocked buffer  23             Lock status: False
+FreeList - Process  6272
+<- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 27 -><- 10 -><- 11 -><- 14 -><- 2 -><- 15 -><- 16 -><- 7 -><- 17 -><- 23 ->
+
+---------------------------------------------------------
+Process  6272  has requested block number  3 
+---------------------------------------------------------
+
+************ Asynchronous Writing of Block Number- 18  over ***************
+Replace buffer  -1  in freeList, with buffer  3
+Buffer  -1  is removed from free list
+Buffer  3  added to the hash queue
+
+Process  6272 : RECIEVED BUFFER  3
+
+ 6272  HashQ : 
+<- 0 -><- 24 -><- 16 ->
+
+<- 17 -><- 9 ->
+
+<- 10 -><- 14 -><- 2 -><- 18 ->
+
+<- 23 -><- 27 -><- 11 -><- 15 -><- 7 -><- 3 ->
+
+
+ 6272  FreeList :
+<- 18 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 27 -><- 10 -><- 11 -><- 14 -><- 2 -><- 15 -><- 16 -><- 7 -><- 17 -><- 23 ->
+Operation 0 - Process  6272  Delayed Write:  3
+Process  6272  has unlocked buffer  3             Lock status: False
+FreeList - Process  6272
+<- 18 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 27 -><- 10 -><- 11 -><- 14 -><- 2 -><- 15 -><- 16 -><- 7 -><- 17 -><- 23 -><- 3 ->
+Process  6270  woke up from long sleep with buffer  24
+Process  6270  has unlocked buffer  24             Lock status: False
+FreeList - Process  6270
+<- 18 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 27 -><- 10 -><- 11 -><- 14 -><- 2 -><- 15 -><- 16 -><- 7 -><- 17 -><- 23 -><- 3 -><- 24 ->
+Process  6271  woke up from long sleep with buffer  9
+Process  6271  has unlocked buffer  9             Lock status: False
+FreeList - Process  6271
+<- 18 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 27 -><- 10 -><- 11 -><- 14 -><- 2 -><- 15 -><- 16 -><- 7 -><- 17 -><- 23 -><- 3 -><- 24 -><- 9 ->
+
+---------------------------------------------------------
+Process  6271  has requested block number  16 
+---------------------------------------------------------
+
+Process  6271  will get buffer  16  from hashQ
+
+Process  6271 : RECIEVED BUFFER  16
+
+ 6271  HashQ : 
+<- 0 -><- 24 -><- 16 ->
+
+<- 17 -><- 9 ->
+
+<- 10 -><- 14 -><- 2 -><- 18 ->
+
+<- 23 -><- 27 -><- 11 -><- 15 -><- 7 -><- 3 ->
+
+
+ 6271  FreeList :
+<- 18 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 27 -><- 10 -><- 11 -><- 14 -><- 2 -><- 15 -><- 7 -><- 17 -><- 23 -><- 3 -><- 24 -><- 9 ->
+Operation 2 - Process  6271  Buffer:  16
+Process  6271  has unlocked buffer  16             Lock status: False
+FreeList - Process  6271
+<- 16 -><- 18 -><- -1 -><- -1 -><- -1 -><- -1 -><- -1 -><- 0 -><- 27 -><- 10 -><- 11 -><- 14 -><- 2 -><- 15 -><- 7 -><- 17 -><- 23 -><- 3 -><- 24 -><- 9 ->
+
+~~~~~~~~~~~~~~ END ~~~~~~~~~~~~~~
