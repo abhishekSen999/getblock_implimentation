@@ -9,16 +9,12 @@ Academic project to implement Getblk and Brelse Algorithms. We are aiming to sim
  Python
 
 ## Installation :
-We need to install following things for running the code -
-- VSCode 
+You need to install the following things for running the code -
 - Python3
 - Windows Subsystem for Linux(WSL) (on Windows system)
 
-## To compile :
-In order to compile and run the code follow the given steps -
-1. Open VSCode
-2. Go to File -> Open Folder -> Select the designated folder
-3. Open *DriverProcess.py* and run
+## To execute :
+1. run [DriverProcess.py](DriverProcess.py) 
 
 ## Code structure :
 The structure is as follows :
